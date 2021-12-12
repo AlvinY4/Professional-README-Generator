@@ -1,14 +1,18 @@
 {
-  "name": "static-site",
+  "name": "develop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "Professional-README-Generator"
+  },
+  "author": "AlvinY4",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^8.2.0"
   }
 }
