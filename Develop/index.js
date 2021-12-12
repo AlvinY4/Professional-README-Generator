@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
-const questions = [
+inquirer.prompt([
     // Project title 
     {
         type: 'input',
@@ -24,7 +24,7 @@ const questions = [
         name: 'description',
         message: 'Please describe your project (Required)',
         validate: descriptionInput => {
-            if (decriptionInput) {
+            if (descriptionInput) {
                 return true; 
             } else {
                 console.log('Need a project description to continue!');
@@ -131,25 +131,33 @@ const questions = [
             }
         }
     },
-];
+]) 
+    .then((userInput) => {
+        const readmeFile = generateMarkdown.generateMarkdown(userInput);
+
+        fs.writeFile('README.md', readmeFile, (err) => 
+        err ? console.log(err) : console.log('readme created!')); 
+    }); 
+
+
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
-        if (err)
-            throw err;
-        console.log('Info transfered to README')
-    });
-};
+// function writeToFile(fileName, data) {
+//     fs.writeFile(fileName, data, (err) => {
+//         if (err)
+//             throw err;
+//         console.log('Info transfered to README')
+//     });
+// };
 
 // TODO: Create a function to initialize app
-function init() {
-    inquirer.prompt(questions)
-    .then(function (userInput) {
-        console.log(userInput)
-        writeToFile("README.md",generateMarkdown(userInput));
-    });
-};
+// function init() {
+//     inquirer.prompt(questions)
+//     .then(function (userInput) {
+//         console.log(userInput)
+//         writeToFile("README.md",generateMarkdown(userInput));
+//     });
+// };
 
 // Function call to initialize app
-init();
+// init();
