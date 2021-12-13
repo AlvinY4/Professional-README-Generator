@@ -33,4 +33,9 @@
   * If you have any questions email me at <a leroy.yearby@gmail.com></a>
   * You can also reach me on my GitHub [AlvinY4](http://github.com/AlvinY4)';
 
+## Video and Screenshot 
+
+<iframe src="https://drive.google.com/file/d/1q75mhe0xfcnpFGu3KXn4OLbeCMBOoYeI/preview" width="640" height="480"></iframe> 
+
+
 
