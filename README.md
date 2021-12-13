@@ -35,7 +35,7 @@
 
 ## Video and Screenshot 
 
-<iframe src="https://drive.google.com/file/d/1q75mhe0xfcnpFGu3KXn4OLbeCMBOoYeI/preview" width="640" height="480"></iframe> 
+
 
 
 
