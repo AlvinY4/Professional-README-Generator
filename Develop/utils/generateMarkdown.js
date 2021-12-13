@@ -1,34 +1,17 @@
 // Returns a license badge based on which license is passed in
 let renderLicenseBadge = (license) => {
-  switch (license) {
-    
-    case 'Apache':
-      return '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)';
-
-    case 'Boost':
-      return '![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)';
-
-    case 'MIT': 
-      return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
-
-    case 'Mozilla':
-      return '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'; 
-
-    case 'IBM':
-      return '![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)';
-
-    case 'GNU': 
-      return '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)';
-
-    case 'Eclipse':
-      return '![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)';
-
-    default:
-      return''; 
+  if (license === 'Apache') {
+    return "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)" 
+  } else if (license === 'MIT') {
+    return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)"
+  } else if (license === 'Mozilla') {
+    return "![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)"
+  } else {
+    license = " "; 
   }
 }
 
-// Returns the license link
+// // Returns the license link
 let renderLicenseLink = (license) => {
   if (license !== "none") {
     return "![LicenseLink](#license)";
@@ -37,33 +20,16 @@ let renderLicenseLink = (license) => {
   }
 }
 
-// Returns the license section of README
+// // Returns the license section of README
 let renderLicenseSection = (license) => {
-  switch (license) {
-
-    case 'Apache':
-      return 'License \n [Apache 2.0](https://opensource.org/licenses/Apache-2.0)';
-
-    case 'Boost':
-      return 'License \n [Boost](https://www.boost.org/LICENSE_1_0.txt)';
-
-    case 'MIT':
-      return 'License \n [MIT](https://opensource.org/licenses/MIT)';
-
-    case 'Mozilla':
-      return 'License \n [Mozilla 2.0](https://opensource.org/licenses/MPL-2.0)';
-
-    case 'IBM':
-      return 'License \n [IBM](https://opensource.org/licenses/IPL-1.0)';
-
-    case 'GNU':
-      return 'License \n [GNU v3](https://www.gnu.org/licenses/gpl-3.0)';
-
-    case 'Eclipse':
-      return 'License \n [Eclipse](https://opensource.org/licenses/EPL-1.0)';
-
-    default:
-      return ''; 
+  if (license === 'Apache') {
+    return 'License \n [Apache 2.0](https://opensource.org/licenses/Apache-2.0)'
+  } else if (license === 'MIT') {
+    return 'License \n [MIT](https://opensource.org/licenses/MIT)'
+  } else if (license === 'Mozilla') {
+    return 'License \n [Mozilla 2.0](https://opensource.org/licenses/MPL-2.0)'
+  } else {
+    license = '';
   }
 }
 
@@ -71,7 +37,7 @@ let renderLicenseSection = (license) => {
 const generateMarkdown = (userInput) => {
   return `# ${userInput.title} 
 
-  # ${renderLicenseBadge(userInput.license)}
+  # ${renderLicenseBadge(userInput.license)} 
 
   #### Table of Contents:
   1. [Description](#description)
@@ -92,7 +58,7 @@ const generateMarkdown = (userInput) => {
   * ${userInput.usage}
 
   ### License 
-  * Licensed under ${renderLicenseSection(userInput.license)}
+  * Licensed under ${userInput.license}
 
   ### Contribution 
   * ${userInput.contribution}
@@ -101,7 +67,7 @@ const generateMarkdown = (userInput) => {
   ${userInput.testing}
 
   ## Questions 
-  * If you have any questions email me at <a${userInput.email}></a>
+  * If you have any questions email me at <a ${userInput.email}></a>
   * You can also reach me on my GitHub [${userInput.github}](http://github.com/${userInput.github})';
 
 

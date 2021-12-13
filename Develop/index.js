@@ -93,7 +93,7 @@ inquirer.prompt([
         type: 'checkbox', 
         name: 'licensing',
         message: 'Choose the right license for your project (Required)',
-        choices: ['Apache','Boost','MIT','Mozilla','IBM','GNU','Eclipse','None'],
+        choices: ['Apache','MIT','Mozilla','None'],
         validate: licenseInput => {
             if (licenseInput) {
                 return true; 
