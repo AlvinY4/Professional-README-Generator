@@ -1,4 +1,4 @@
-# sfss 
+# Professional README Generator  
 
   # undefined 
 
@@ -12,25 +12,25 @@
   7. [Questions](#Questions)
 
   ### Description
-  * sdfsdf
+  * A tool users can use to generate a README file for their projects. 
   
   ### Installation 
-  * sfsf
+  * npm install
 
   ### Usage 
-  * sfsf
+  * node
 
   ### License 
   * Licensed under undefined
 
   ### Contribution 
-  * ssdfsdf
+  * fix minor errors 
 
   ### Tests 
-  sfsfs
+  node
 
   ## Questions 
-  * If you have any questions email me at <a wewewewe></a>
-  * You can also reach me on my GitHub [wewe](http://github.com/wewe)';
+  * If you have any questions email me at <a leroy.yearby@gmail.com></a>
+  * You can also reach me on my GitHub [AlvinY4](http://github.com/AlvinY4)';
 
 
