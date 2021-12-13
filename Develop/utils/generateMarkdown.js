@@ -67,7 +67,7 @@ const generateMarkdown = (userInput) => {
   ${userInput.testing}
 
   ## Questions 
-  * If you have any questions email me at <a ${userInput.email}></a>
+  * If you have any questions email me at <a src="${userInput.email}""></a> 
   * You can also reach me on my GitHub [${userInput.github}](http://github.com/${userInput.github})';
 
 

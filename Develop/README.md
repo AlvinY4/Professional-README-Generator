@@ -1,4 +1,4 @@
-# Professional README Generator  
+# Professional README Generator 
 
   # undefined 
 
@@ -12,10 +12,10 @@
   7. [Questions](#Questions)
 
   ### Description
-  * A tool users can use to generate a README file for their projects. 
+  * A tool that users can use to generate a readme file for their projects
   
   ### Installation 
-  * npm install
+  * npm i
 
   ### Usage 
   * node
@@ -24,13 +24,13 @@
   * Licensed under undefined
 
   ### Contribution 
-  * fix minor errors 
+  * fix minor erros
 
   ### Tests 
   node
 
   ## Questions 
-  * If you have any questions email me at <a leroy.yearby@gmail.com></a>
+  * If you have any questions email me at <a src="leroy.yearby@gmail.com""></a> 
   * You can also reach me on my GitHub [AlvinY4](http://github.com/AlvinY4)';
 
 
