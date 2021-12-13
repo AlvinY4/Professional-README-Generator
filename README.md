@@ -37,7 +37,7 @@
 
 <img src=https://github.com/AlvinY4/Professional-README-Generator/blob/main/Website%20video/Untitled_%20Dec%2012%2C%202021%209_18%20PM.gif/> 
 
-## Vide Link 
+## Video Link 
 
 https://drive.google.com/file/d/1uE9El16t3odRRtlsEIkV297LARZoZBsn/view?usp=sharing
 
